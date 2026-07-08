@@ -1,17 +1,105 @@
 ---
-
+import "../styles/global.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VocalNova</title>
+  </head>
+
+  <body class="bg-slate-950 text-white">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/95 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="#inicio" class="text-2xl font-bold">
+          Vocal<span class="text-purple-500">Nova</span>
+        </a>
+
+        <div class="hidden md:flex gap-8 text-sm">
+          <a href="#funciones">Funciones</a>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#precios">Precios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-3">
+        <a href="#funciones" class="block">Funciones</a>
+        <a href="#como-funciona" class="block">Cómo funciona</a>
+        <a href="#precios" class="block">Precios</a>
+        <a href="#contacto" class="block">Contacto</a>
+      </div>
+    </nav>
+
+    <main id="inicio" class="pt-24">
+      <section class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-purple-400 font-semibold mb-4">Tu entrenador vocal inteligente</p>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            Aprende a cantar mejor con
+            <span class="text-purple-500">Inteligencia Artificial</span>
+          </h1>
+
+          <p class="mt-6 text-lg text-slate-300 leading-relaxed">
+            Ejercicios personalizados, planes vocales, seguimiento inteligente y una profesora virtual disponible las 24 horas.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="#precios" class="text-center px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-yellow-500 font-bold">
+              Empieza gratis
+            </a>
+
+            <a href="#como-funciona" class="text-center px-8 py-4 rounded-full border border-purple-500">
+              Ver demo
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="w-full max-w-xs h-[420px] rounded-[2rem] bg-gradient-to-br from-purple-700 to-slate-900 p-5 shadow-2xl">
+            <div class="h-full rounded-[1.5rem] border border-white/10 flex flex-col justify-center items-center text-center p-6">
+              <p class="text-xl font-bold">Mockup App VocalNova</p>
+              <p class="mt-4 text-slate-300">Test vocal · Chat IA · Progreso</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="funciones" class="px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8">Funciones principales</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-white/5">🎤 Entrenador vocal 24/7</div>
+          <div class="p-6 rounded-2xl bg-white/5">🎼 Ejercicios personalizados</div>
+          <div class="p-6 rounded-2xl bg-white/5">📈 Seguimiento de progreso</div>
+        </div>
+      </section>
+
+      <section id="como-funciona" class="px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8">Cómo funciona</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="p-6 rounded-2xl bg-white/5">1. Haz el test vocal</div>
+          <div class="p-6 rounded-2xl bg-white/5">2. Recibe tu plan</div>
+          <div class="p-6 rounded-2xl bg-white/5">3. Practica cada día</div>
+          <div class="p-6 rounded-2xl bg-white/5">4. Sigue tu progreso</div>
+        </div>
+      </section>
+
+      <section id="precios" class="px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8">Precios</h2>
+      </section>
+    </main>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn?.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
