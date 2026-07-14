@@ -10,8 +10,12 @@ import "../styles/global.css";
   </head>
 
   <body class="bg-slate-950 text-white">
-    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/95 border-b border-white/10">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <nav
+      class="fixed top-0 left-0 w-full z-50 bg-slate-950/95 border-b border-white/10"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
         <a href="#inicio" class="text-2xl font-bold">
           Vocal<span class="text-purple-500">Nova</span>
         </a>
@@ -34,47 +38,211 @@ import "../styles/global.css";
       </div>
     </nav>
 
-    <main id="inicio" class="pt-24">
-      <section class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <main id="inicio" class="pt-25">
+      <section
+        class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+      >
         <div>
-          <p class="text-purple-400 font-semibold mb-4">Tu entrenador vocal inteligente</p>
-
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            Aprende a cantar mejor con
-            <span class="text-purple-500">Inteligencia Artificial</span>
-          </h1>
-
-          <p class="mt-6 text-lg text-slate-300 leading-relaxed">
-            Ejercicios personalizados, planes vocales, seguimiento inteligente y una profesora virtual disponible las 24 horas.
+          <p
+            class="text-purple-400 font-semibold mb-4 uppercase tracking-wider"
+          >
+            IA aplicada al entrenamiento vocal
           </p>
 
+          <h1
+            class="text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-5xl xl:text-6xl"
+          >
+            Descubre todo el
+            <span class="block">
+              <span
+                class="bg-linear-to-r from-purple-500 to-fuchsia-400 bg-clip-text text-transparent"
+              >
+                potencial
+              </span>
+              de tu voz
+            </span>
+          </h1>
+
+          <p class="mt-6 text-xl text-slate-300 leading-relaxed max-w-2xl">
+            VocalNova analiza tu nivel vocal y crea un plan personalizado con
+            ejercicios diarios, seguimiento de progreso y asistencia inteligente
+            para ayudarte a cantar mejor.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4 text-sm">
+            <span class="px-4 py-2 rounded-full bg-slate-800">
+              ✓ Test vocal gratuito
+            </span>
+
+            <span class="px-4 py-2 rounded-full bg-slate-800">
+              ✓ Plan personalizado
+            </span>
+
+            <span class="px-4 py-2 rounded-full bg-slate-800">
+              ✓ Ejercicios diarios
+            </span>
+
+            <span class="px-4 py-2 rounded-full bg-slate-800">
+              ✓ Seguimiento de progreso
+            </span>
+          </div>
+
           <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="#precios" class="text-center px-8 py-4 rounded-full bg-linear-to-r from-purple-600 to-yellow-500 font-bold">
-              Empieza gratis
+            <a
+              href="#precios"
+              class="text-center px-8 py-4 rounded-full bg-linear-to-r from-purple-600 to-yellow-500 font-bold"
+            >
+              Haz tu test vocal gratis
             </a>
 
-            <a href="#como-funciona" class="text-center px-8 py-4 rounded-full border border-purple-500">
-              Ver demo
+            <a
+              href="#como-funciona"
+              class="text-center px-8 py-4 rounded-full border border-purple-500"
+            >
+              Descubre cómo funciona
             </a>
           </div>
         </div>
+        
+        <div
+          class="flex h-full flex-col rounded-3xl border border-white/10 bg-slate-950/35 p-5"
+        >
+          <div class="mx-auto mb-6 h-1.5 w-16 rounded-full bg-white/20"></div>
 
-        <div class="flex justify-center">
-          <div class="w-full max-w-xs h-105 rounded-4xl bg-linear-to-br from-purple-700 to-slate-900 p-5 shadow-2xl">
-            <div class="h-full rounded-3xl border border-white/10 flex flex-col justify-center items-center text-center p-6">
-              <p class="text-xl font-bold">Mockup App VocalNova</p>
-              <p class="mt-4 text-slate-300">Test vocal · Chat IA · Progreso</p>
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-sm text-purple-300">Hola, Cyntia 👋</p>
+              <h3 class="mt-1 text-xl font-bold">Tu entrenamiento de hoy</h3>
+            </div>
+
+            <div
+              class="flex h-11 w-11 items-center justify-center rounded-full bg-purple-500/20"
+            >
+              🎤
             </div>
           </div>
+
+          <div class="mt-6 rounded-2xl bg-white/10 p-4">
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-slate-300">Progreso semanal</span>
+              <span class="font-bold text-purple-300">78%</span>
+            </div>
+
+            <div class="mt-3 h-2 overflow-hidden rounded-full bg-slate-800">
+              <div
+                class="h-full w-[78%] rounded-full bg-linear-to-r from-purple-500 to-amber-400"
+              >
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-3">
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 p-3">
+              <span
+                class="flex h-10 w-10 items-center justify-center rounded-xl bg-purple-500/20"
+              >
+                🌬️
+              </span>
+              <div>
+                <p class="font-semibold">Respiración y apoyo</p>
+                <p class="text-sm text-slate-400">5 minutos</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 p-3">
+              <span
+                class="flex h-10 w-10 items-center justify-center rounded-xl bg-fuchsia-500/20"
+              >
+                🎼
+              </span>
+              <div>
+                <p class="font-semibold">Afinación vocal</p>
+                <p class="text-sm text-slate-400">8 minutos</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 rounded-xl bg-white/5 p-3">
+              <span
+                class="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/20"
+              >
+                🔥
+              </span>
+              <div>
+                <p class="font-semibold">Racha actual</p>
+                <p class="text-sm text-slate-400">12 días consecutivos</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="mt-auto rounded-full bg-linear-to-r from-purple-600 to-amber-400 px-5 py-3 font-bold transition duration-300 hover:scale-[1.02]"
+          >
+            Comenzar rutina
+          </button>
         </div>
+        
       </section>
+      <section class="max-w-7xl mx-auto px-4 py-16">
+  <div class="text-center">
+    <p class="text-purple-400 font-semibold uppercase tracking-wider">
+      ¿Por qué VocalNova?
+    </p>
+
+    <h2 class="mt-4 text-3xl md:text-4xl font-bold">
+      Entrena tu voz de forma inteligente
+    </h2>
+
+    <p class="mt-4 text-slate-400 max-w-2xl mx-auto">
+      VocalNova combina experiencia vocal, seguimiento de progreso e inteligencia artificial para ayudarte a mejorar más rápido.
+    </p>
+  </div>
+
+  <div class="mt-12 grid md:grid-cols-3 gap-6">
+    
+    <div class="bg-slate-900 rounded-3xl p-6">
+      <div class="text-4xl mb-4">🎯</div>
+      <h3 class="text-xl font-bold mb-2">
+        Plan personalizado
+      </h3>
+      <p class="text-slate-400">
+        Recibe ejercicios adaptados a tu nivel, objetivos y tipo de voz.
+      </p>
+    </div>
+
+    <div class="bg-slate-900 rounded-3xl p-6">
+      <div class="text-4xl mb-4">🎤</div>
+      <h3 class="text-xl font-bold mb-2">
+        Técnica adaptada
+      </h3>
+      <p class="text-slate-400">
+        Mejora respiración, afinación, apoyo y colocación vocal paso a paso.
+      </p>
+    </div>
+
+    <div class="bg-slate-900 rounded-3xl p-6">
+      <div class="text-4xl mb-4">📈</div>
+      <h3 class="text-xl font-bold mb-2">
+        Seguimiento inteligente
+      </h3>
+      <p class="text-slate-400">
+        Visualiza tu progreso y mantén la motivación con objetivos diarios.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       <section id="funciones" class="px-4 py-16">
         <h2 class="text-3xl font-bold mb-8">Funciones principales</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="p-6 rounded-2xl bg-white/5">🎤 Entrenador vocal 24/7</div>
-          <div class="p-6 rounded-2xl bg-white/5">🎼 Ejercicios personalizados</div>
-          <div class="p-6 rounded-2xl bg-white/5">📈 Seguimiento de progreso</div>
+          <div class="p-6 rounded-2xl bg-white/5">
+            🎼 Ejercicios personalizados
+          </div>
+          <div class="p-6 rounded-2xl bg-white/5">
+            📈 Seguimiento de progreso
+          </div>
         </div>
       </section>
 
@@ -90,7 +258,89 @@ import "../styles/global.css";
 
       <section id="precios" class="px-4 py-16">
         <h2 class="text-3xl font-bold mb-8">Precios</h2>
+        <div class="grid md:grid-cols-2 gap-8 mt-8">
+
+  <div class="bg-slate-900 p-8 rounded-3xl border border-white/10">
+    <h3 class="text-2xl font-bold">Gratis</h3>
+
+    <p class="text-5xl font-bold mt-4">0€</p>
+
+    <ul class="mt-6 space-y-3 text-slate-300">
+      <li>✓ Test vocal</li>
+      <li>✓ Ejercicios básicos</li>
+      <li>✓ Seguimiento simple</li>
+    </ul>
+  </div>
+
+  <div class="bg-slate-900 p-8 rounded-3xl border border-purple-500">
+    <h3 class="text-2xl font-bold">Premium</h3>
+
+    <p class="text-5xl font-bold mt-4">
+      9,99€
+      <span class="text-lg">/mes</span>
+    </p>
+
+    <ul class="mt-6 space-y-3 text-slate-300">
+      <li>✓ Plan personalizado</li>
+      <li>✓ IA entrenadora</li>
+      <li>✓ Seguimiento avanzado</li>
+      <li>✓ Estadísticas completas</li>
+    </ul>
+  </div>
+
+</div>
       </section>
+      <section id="faq" class="px-4 py-16">
+
+<h2 class="text-4xl font-bold mb-8">
+Preguntas frecuentes
+</h2>
+
+<div class="space-y-6">
+
+<div class="bg-slate-900 p-6 rounded-2xl mb-4">
+  <h3 class="font-bold text-xl">
+    ¿VocalNova sirve para principiantes?
+  </h3>
+
+  <p class="text-slate-300 mt-2">
+    Sí, adapta los ejercicios a tu nivel.
+  </p>
+</div>
+
+<div class="bg-slate-900 p-6 rounded-2xl mb-4">
+  <h3 class="font-bold text-xl">
+    ¿Necesito conocimientos musicales?
+  </h3>
+
+<p class="text-slate-300 mt-2">
+No. La plataforma está diseñada para cualquier persona.
+</p>
+</div>
+
+<div class="bg-slate-900 p-6 rounded-2xl mb-4">
+  <h3 class="font-bold text-xl">
+    ¿Cuánto tiempo debo practicar?
+  </h3>
+
+  <p class="text-slate-300 mt-2">
+Entre 10 y 15 minutos al día.
+</p>
+</div>
+
+<div class="bg-slate-900 p-6 rounded-2xl mb-4">
+  <h3 class="font-bold text-xl">
+    ¿Cómo mejorar la afinación al cantar?
+  </h3>
+
+  <p class="text-slate-300 mt-2">
+    VocalNova genera ejercicios personalizados para trabajar afinación, respiración y control vocal según tu nivel.
+  </p>
+
+</div>
+</div>
+
+</section>
     </main>
 
     <script>
@@ -101,8 +351,28 @@ import "../styles/global.css";
         mobileMenu?.classList.toggle("hidden");
       });
     </script>
-	<footer class="border-t border-slate-800 py-8 text-center text-slate-400 mt-20">
-  <p>© 2026 VocalNova. Todos los derechos reservados.</p>
-</footer>
+    <section class="py-20 text-center">
+
+<h2 class="text-5xl font-bold">
+Empieza hoy a mejorar tu voz
+</h2>
+
+<p class="mt-4 text-slate-300">
+Haz tu test vocal gratuito y descubre tu potencial.
+</p>
+
+<a
+ href="#inicio"
+ class="inline-block mt-8 px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-yellow-500 font-bold"
+>
+Comenzar ahora
+</a>
+
+</section>
+    <footer
+      class="border-t border-slate-800 py-8 text-center text-slate-400 mt-20"
+    >
+      <p>© 2026 VocalNova. Todos los derechos reservados.</p>
+    </footer>
   </body>
 </html>
